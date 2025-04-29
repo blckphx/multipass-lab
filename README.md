@@ -40,7 +40,13 @@ cd multipass-lab
 # Destroy everything
 ./manage.sh destroy
 
-# Bonus commands
+# Lists all running & stopped Multipass instances
 ./manage.sh status
+
+# Creates snapshots (backups) running instances
 ./manage.sh backup
+# EX:
+multipass snapshot <instance-name> <snapshot-name>
+
+# Collects the cloud-init logs (/var/log/cloud-init.log) from each VM for troubleshooting 
 ./manage.sh logs
