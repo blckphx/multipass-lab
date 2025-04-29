@@ -12,6 +12,7 @@ Automated Ubuntu VM provisioning using [Multipass](https://multipass.run/) with 
 - Cloud-init configuration for each role
 - Destroy/reset/backups/instance logs/status all VMs with a single command
 
+<pre>
 ## 📁 Project Structure
 multipass-lab/
 ├── manage.sh # Main script to manage VMs
@@ -19,7 +20,8 @@ multipass-lab/
  ├── web-server.yaml # Installs and starts nginx
  ├── log-server.yaml # Installs and starts rsyslog
  └── admin-node.yaml # Installs admin tools
-
+</code> </pre>
+ 
  ## 🧰 Requirements
 
 - [Multipass](https://multipass.run/)
