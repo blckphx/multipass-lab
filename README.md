@@ -30,7 +30,8 @@ multipass-lab/
 
 ```bash
 # Clone the repo
-git clone git@github.com:username/multipass-lab.git (in my case blckphx)
+git clone git@github.com:username/multipass-lab.git
+"(in my case username is: blckphx)"
 cd multipass-lab
 
 # Start lab environment
