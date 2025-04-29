@@ -1,0 +1,7 @@
+#cloud-config
+apt_update: true
+packages:
+  - rsyslog
+runcmd:
+  - systemctl enable rsyslog
+  - systemctl start rsyslog

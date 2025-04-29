@@ -1,0 +1,6 @@
+#cloud-config
+apt_update: true
+runcmd:
+  - apt-get update
+  - apt-get install -y curl htop net-tools
+  - echo "Admin node ready"
