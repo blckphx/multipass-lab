@@ -35,6 +35,22 @@ case "$1" in
     multipass snapshot admin-node
     echo "[✓] Snapshots taken."
     ;;
+    
+  start)
+    echo "[+] Starting instances..."
+    multipass start web-server
+    multipass start log-server
+    multipass start admin-node
+    echo "[✓] Instances launched."
+    ;;
+    
+  stop)
+    echo "[+] Stopping instances..."
+    multipass stop web-server
+    multipass stop log-server
+    multipass stop admin-node
+    echo "[✓] Instances stopped."
+    ;;
 
   logs)
     echo "[+] Fetching cloud-init logs..."
