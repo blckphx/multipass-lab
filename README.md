@@ -45,10 +45,16 @@ cd multipass-lab
 # Lists all running & stopped Multipass instances
 ./manage.sh status
 
-# Creates snapshots (backups) running instances
+# Creates Snapshots (backups) running instances (firstly stop all running instances before backup)
 ./manage.sh backup
 # EX:
 multipass snapshot <instance-name> <snapshot-name>
+
+# Starts Instances
+./manage.sh start
+
+# Stops Instances (very imporant when wanting to use backup)
+./manage.sh stop
 
 # Collects the cloud-init logs (/var/log/cloud-init.log) from each VM for troubleshooting 
 ./manage.sh logs
